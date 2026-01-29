@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   width: utils.$card-width;
-  height: 408px;
+  height: utils.$grid-height;
 
   background-image: url(../images/imac.jpeg);
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 
   box-sizing: border-box;
   border: 1px solid utils.$white-color;
-  border-radius: 5px;
+  border-radius: utils.$border-radius;
 
   &__title {
   font-weight: 500;
@@ -107,7 +107,7 @@
   font-size: 14px;
   font-weight: 700;
 
-  border-radius: 5px;
+  border-radius: utils.$border-radius;
 
   text-transform: uppercase;
 
