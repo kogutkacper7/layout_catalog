@@ -18,20 +18,21 @@
   transition: transform 0.3s;
 
   box-sizing: border-box;
-  border: 1px solid #F3F3F3;
+  border: 1px solid utils.$white-color;
   border-radius: 5px;
 
 
   &:hover {
     transform: scale(1.2);
     .card__title {
-      color: #34568b;
+      color: utils.$card-title-color;
     }
   }
 
   &__title {
   font-weight: 500;
   font-size: 12px;
+  transition: color 300ms;
 }
 
 &__product-code {
@@ -42,7 +43,7 @@
   line-height: utils.$product-code-height;
   height: utils.$product-code-height;
 
-  color: rgba(97, 96, 112, 1);
+  color: utils.$code-price-color;
 }
 
 &__stars-reviews {
@@ -75,7 +76,7 @@
     font-size: 12px;
     font-weight: 400;
     width: 31px;
-    color: rgba(97, 96, 112, 1);
+    color:  utils.$code-price-color;
   }
 
 &__amount {
@@ -97,8 +98,8 @@
 
   text-decoration: none;
 
-  background-color: rgba(0, 172, 220, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: utils.$blue;
+  color: utils.$white-color-1;
   width: utils.$card-element-width;
   height: 40px;
 
@@ -115,9 +116,9 @@
 
   &:hover {
   box-sizing: border-box;
-  border: 1px solid rgba(0, 172, 220, 1);
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(0, 172, 220, 1);
+  border: 1px solid utils.$blue;
+  background-color: utils.$white-color-1;
+  color:  utils.$blue;
 }
 }
 }

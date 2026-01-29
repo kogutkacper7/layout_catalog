@@ -1,13 +1,15 @@
+@use "../utils.scss";
+
 .cards {
   display: grid;
   justify-content: center;
   justify-items: center;
   align-items: center;
   align-content: center;
-  grid-template-rows: repeat(2, 408px);
-  grid-template-columns: repeat(1, 200px);
-  gap: 46px 48px;
-  padding: 50px 40px;
+  grid-template-rows: repeat(2, utils.$grid-height);
+  grid-template-columns: repeat(1, utils.$card-width);
+  gap: utils.$gap-vertical utils.$gap-vertical;
+  padding: utils.$padding-value-1 utils.$padding-value-2;
 }
 
 

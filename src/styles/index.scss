@@ -1,6 +1,9 @@
 @use "./blocks/cards.scss";
 @use "./blocks/stars.scss";
 @use "./blocks/card.scss";
+@use "./blocks/header.scss";
+@use "./blocks/menu.scss";
+@use "./utils.scss";
 
 
 $blue: #00acdc;
@@ -14,90 +17,8 @@ $nav-link-color: #060b35;
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-
-  &:has(.card:hover) .menu__link {
-    color: #00acdc;
-  }
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-
-  box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 5%);
-
-  &__logo {
-    margin: 0;
-  }
-
-  &__nav {
-    margin: 0;
-  }
-
-  &__logo .header__logo-img {
-    display: block;
-    width: 40px;
-    height: 40px;
-  }
-
-  &__nav .link {
-  font-size: 12px;
-  text-decoration: none;
-  color: black;
 }
 
 
-}
 
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 
-  &__link {
-     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0;
-    color: $nav-link-color;
-
-    transition: color 300ms;
-  }
-
-  &__link:hover {
-    color: $blue;
-  }
-
-  & > li {
-    display: flex;
-    align-items: center;
-  }
-
-  & li:not(:last-child) {
-  margin-right: 20px;
-  }
-
-  &__link.menu__link--is-active {
-    color: $blue;
-  }
-
-  &__link.menu__link--is-active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: $blue;
-  border-radius: 8px;
-}
-}
