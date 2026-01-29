@@ -21,6 +21,11 @@
   border: 1px solid utils.$white-color;
   border-radius: 5px;
 
+  &__title {
+  font-weight: 500;
+  font-size: 12px;
+  transition: color 300ms;
+  }
 
   &:hover {
     transform: scale(1.2);
@@ -28,12 +33,6 @@
       color: utils.$card-title-color;
     }
   }
-
-  &__title {
-  font-weight: 500;
-  font-size: 12px;
-  transition: color 300ms;
-}
 
 &__product-code {
   margin-top: 4px;

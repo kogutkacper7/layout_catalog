@@ -1,12 +1,10 @@
 .cards {
   display: grid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
+  place-items: center;
+  place-content: center;
   grid-template-rows: repeat(2, 408px);
   grid-template-columns: repeat(1, 200px);
-  gap: 46px 46px;
+  gap: 46px 48px;
   padding: 50px 40px;
 }
 
@@ -84,18 +82,18 @@
   border-radius: 5px;
 }
 
+.card__title {
+  font-weight: 500;
+  font-size: 12px;
+  transition: color 300ms;
+}
+
 .card:hover {
   transform: scale(1.2);
 }
 
 .card:hover .card__title {
   color: #34568b;
-}
-
-.card__title {
-  font-weight: 500;
-  font-size: 12px;
-  transition: color 300ms;
 }
 
 .card__product-code {

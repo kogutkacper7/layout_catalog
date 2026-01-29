@@ -2,13 +2,11 @@
 
 .cards {
   display: grid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
+  place-items: center;
+  place-content: center;
   grid-template-rows: repeat(2, utils.$grid-height);
   grid-template-columns: repeat(1, utils.$card-width);
-  gap: utils.$gap-vertical utils.$gap-vertical;
+  gap: utils.$gap-vertical utils.$gap-horizontal;
   padding: utils.$padding-value-1 utils.$padding-value-2;
 }
 
