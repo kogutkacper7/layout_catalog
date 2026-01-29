@@ -19,7 +19,7 @@
 
   box-sizing: border-box;
   border: 1px solid utils.$white-color;
-  border-radius: utils.$border-radius;
+  border-radius: utils.$border-radius-1;
 
   &__title {
   font-weight: 500;
@@ -98,7 +98,7 @@
   text-decoration: none;
 
   background-color: utils.$blue;
-  color: utils.$white-color-1;
+  color: utils.$pure-white;
   width: utils.$card-element-width;
   height: 40px;
 
@@ -107,7 +107,7 @@
   font-size: 14px;
   font-weight: 700;
 
-  border-radius: utils.$border-radius;
+  border-radius: utils.$border-radius-1;
 
   text-transform: uppercase;
 
@@ -116,7 +116,7 @@
   &:hover {
   box-sizing: border-box;
   border: 1px solid utils.$blue;
-  background-color: utils.$white-color-1;
+  background-color: utils.$pure-white;
   color:  utils.$blue;
 }
 }

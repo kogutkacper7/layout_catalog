@@ -44,8 +44,8 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 4px;
+  height: utils.$height;
   background-color: utils.$blue;
-  border-radius: 8px;
+  border-radius: utils.$border-radius-2
 }
 }
